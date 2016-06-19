@@ -1,0 +1,177 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "2a961fa880eb7ddb7f3461c0a005a7ec",
+    "content-hash": "42ab4b358fb08866ed4e975ac325dceb",
+    "packages": [
+        {
+            "name": "boilerplate/boilerplate",
+            "version": "0.1.0.9999999-dev",
+            "dist": {
+                "type": "path",
+                "url": "/Users/benni/coding/PHP/boilerplate",
+                "reference": "cbd2a83962913c4be3ccc800adafb5dd81c70688",
+                "shasum": null
+            },
+            "require": {
+                "mindplay/composer-locator": "^2.1",
+                "myclabs/php-enum": "^1.4",
+                "pear-pear.php.net/config_lite": "*",
+                "php": ">=7.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "boilerplate\\": "lib/boilerplate/",
+                    "boilerplate\\Core\\": "lib/boilerplate/Core/",
+                    "boilerplate\\DataIo\\": "lib/boilerplate/DataIo/",
+                    "boilerplate\\DataType\\": "lib/boilerplate/DataType/",
+                    "boilerplate\\ExternalApi\\": "lib/boilerplate/ExternalApi/",
+                    "boilerplate\\Utility\\": "lib/boilerplate/Utility/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Altpeter",
+                    "email": "kontakt@benjamin-altpeter.de",
+                    "homepage": "https://benjamin-altpeter.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Lorenz Sieben",
+                    "email": "me@lorenz-sieben.com",
+                    "homepage": "http://lorenz-sieben.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The boilerplate PHP framework"
+        },
+        {
+            "name": "mindplay/composer-locator",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mindplay-dk/composer-locator.git",
+                "reference": "24c960f014904c35ce89b77fc4118903c34b3fe6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mindplay-dk/composer-locator/zipball/24c960f014904c35ce89b77fc4118903c34b3fe6",
+                "reference": "24c960f014904c35ce89b77fc4118903c34b3fe6",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1",
+                "php": ">= 5.4"
+            },
+            "require-dev": {
+                "composer/composer": "^1"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "mindplay\\composer_locator\\Plugin"
+            },
+            "autoload": {
+                "classmap": [
+                    "src/ComposerLocator.php",
+                    "src/Plugin.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Locates Composer package root folders by package name",
+            "time": "2016-06-07 14:40:59"
+        },
+        {
+            "name": "myclabs/php-enum",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/myclabs/php-enum.git",
+                "reference": "07da9d1a7469941ae05b046193fac4c83bdb0d7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/07da9d1a7469941ae05b046193fac4c83bdb0d7e",
+                "reference": "07da9d1a7469941ae05b046193fac4c83bdb0d7e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MyCLabs\\Enum\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP Enum contributors",
+                    "homepage": "https://github.com/myclabs/php-enum/graphs/contributors"
+                }
+            ],
+            "description": "PHP Enum implementation",
+            "homepage": "http://github.com/myclabs/php-enum",
+            "keywords": [
+                "enum"
+            ],
+            "time": "2015-07-22 16:14:03"
+        },
+        {
+            "name": "pear-pear.php.net/Config_Lite",
+            "version": "0.2.5",
+            "dist": {
+                "type": "file",
+                "url": "https://pear.php.net/get/Config_Lite-0.2.5.tgz",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "php": ">=5.2.0.0"
+            },
+            "replace": {
+                "pear-pear/config_lite": "== 0.2.5.0"
+            },
+            "type": "pear-library",
+            "autoload": {
+                "classmap": [
+                    ""
+                ]
+            },
+            "include-path": [
+                "/"
+            ],
+            "license": [
+                "lgpl"
+            ],
+            "description": "This package defines a class for config/settings text files in ini style.\n\t\tCurrently classes available are:\n\t\t* Config_Lite: a class with arrayaccess to handle ini style files\n\t\t* Config_Lite_Exception: Interface implemented by Exceptions"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "boilerplate/boilerplate": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

@@ -1,0 +1,41 @@
+{
+    "name": "boilerplate/boilerplate-starter",
+    "description": "A starter project for use with the boilerplate framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benjamin Altpeter",
+            "email": "kontakt@benjamin-altpeter.de",
+            "homepage": "https://benjamin-altpeter.de",
+            "role": "Developer"
+        },
+        {
+            "name": "Lorenz Sieben",
+            "email": "me@lorenz-sieben.com",
+            "homepage": "http://lorenz-sieben.com",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "hgit attps://git.my-server.in/boilerplate/boilerplate.git"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "boilerplate/boilerplate": "0.1.0.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "acme\\": "lib/acme/",
+            "acme\\Core\\": "lib/acme/Core/",
+            "acme\\DataIo\\": "lib/acme/DataIo/",
+            "acme\\DataType\\": "lib/acme/DataType/",
+            "acme\\ExternalApi\\": "lib/acme/ExternalApi/",
+            "acme\\Utility\\": "lib/acme/Utility/"
+        }
+    }
+}
