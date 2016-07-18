@@ -4,19 +4,45 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2a961fa880eb7ddb7f3461c0a005a7ec",
-    "content-hash": "42ab4b358fb08866ed4e975ac325dceb",
+    "hash": "13e82b3e793b7a0cb40c8e1d462958e8",
+    "content-hash": "b9b0452984ee364652d6742a1f325bb4",
     "packages": [
         {
+            "name": "baltpeter/password-hashing-pbkdf2",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.my-server.in/baltpeter/password-hashing-pbkdf2.git",
+                "reference": "79c44d88de77873cf22fb13a1575d679d0a6ef94"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "baltpeter\\Utility\\": "lib/baltpeter/Utility/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Hornby",
+                    "email": "havoc@defuse.ca"
+                }
+            ],
+            "description": "Password Hashing With PBKDF2",
+            "time": "2016-07-18 17:39:21"
+        },
+        {
             "name": "boilerplate/boilerplate",
-            "version": "0.1.0.9999999-dev",
-            "dist": {
-                "type": "path",
-                "url": "/Users/benni/coding/PHP/boilerplate",
-                "reference": "cbd2a83962913c4be3ccc800adafb5dd81c70688",
-                "shasum": null
+            "version": "v0.1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://git.my-server.in/boilerplate/boilerplate.git",
+                "reference": "75ad7ec3ae3d07c4c58f478cf835a99bc5aab847"
             },
             "require": {
+                "baltpeter/password-hashing-pbkdf2": "*",
                 "mindplay/composer-locator": "^2.1",
                 "myclabs/php-enum": "^1.4",
                 "pear-pear.php.net/config_lite": "*",
@@ -24,6 +50,9 @@
             },
             "type": "library",
             "autoload": {
+                "files": [
+                    "lib/boilerplate/helpers.php"
+                ],
                 "psr-4": {
                     "boilerplate\\": "lib/boilerplate/",
                     "boilerplate\\Core\\": "lib/boilerplate/Core/",
@@ -50,7 +79,8 @@
                     "role": "Developer"
                 }
             ],
-            "description": "The boilerplate PHP framework"
+            "description": "The boilerplate PHP framework",
+            "time": "2016-07-18 19:48:20"
         },
         {
             "name": "mindplay/composer-locator",

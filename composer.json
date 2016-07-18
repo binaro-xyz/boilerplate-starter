@@ -20,13 +20,17 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "hgit attps://git.my-server.in/boilerplate/boilerplate.git"
+            "url": "https://git.my-server.in/boilerplate/boilerplate.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://git.my-server.in/baltpeter/password-hashing-pbkdf2.git"
         }
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "boilerplate/boilerplate": "0.1.0.x-dev"
+        "boilerplate/boilerplate": "v0.1.0.x-dev"
     },
     "autoload": {
         "psr-4": {
