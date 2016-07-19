@@ -30,9 +30,12 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "boilerplate/boilerplate": "v0.1.0.x-dev"
+        "boilerplate/boilerplate": "0.1.0.x-dev"
     },
     "autoload": {
+        "files": [
+            "lib/acme/helpers.php"
+        ],
         "psr-4": {
             "acme\\": "lib/acme/",
             "acme\\Core\\": "lib/acme/Core/",
