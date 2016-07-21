@@ -19,6 +19,10 @@
     ],
     "repositories": [
         {
+            "type": "pear",
+            "url": "https://pear.php.net"
+        },
+        {
             "type": "vcs",
             "url": "https://git.my-server.in/boilerplate/boilerplate.git"
         },

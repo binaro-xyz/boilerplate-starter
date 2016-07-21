@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bb876df3fa8a750122ed4b1c2512d66f",
-    "content-hash": "dfb0c7bebc496e0c3731f1287f66dff9",
+    "hash": "4fdc078d0558f2de9b330ac2e8ab8d50",
+    "content-hash": "75ba77a7e03ac099326ce3fcc64de628",
     "packages": [
         {
             "name": "baltpeter/password-hashing-pbkdf2",
