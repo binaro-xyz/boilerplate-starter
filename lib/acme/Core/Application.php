@@ -12,9 +12,8 @@ class Application extends \boilerplate\Core\Application {
 
     public function __construct() {
         parent::__construct();
-        $this->db_con = new DatabaseConnection();
         $this->config = new Configuration(true, $this->db_con);
-        $this->logger = new Logger('default');
+        $this->logger = &\boilerplate\Core\Application::instance()->logger;
         $this->logger->pushHandler(new BrowserConsoleHandler());
     }
 }
