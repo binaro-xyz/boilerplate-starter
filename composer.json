@@ -34,7 +34,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "boilerplate/boilerplate": "0.1.0.x-dev"
+        "boilerplate/boilerplate": "0.1.0.x-dev",
+        "monolog/monolog": "^1.22"
     },
     "autoload": {
         "files": [
