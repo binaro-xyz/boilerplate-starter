@@ -39,7 +39,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.my-server.in/boilerplate/boilerplate.git",
-                "reference": "20bc2bc0e6eba830ec840df947cc2e1d8087c8eb"
+                "reference": "674e2da165bd596c81682f2aecc2c27c0148c9f9"
             },
             "require": {
                 "baltpeter/password-hashing-pbkdf2": "*",
@@ -80,7 +80,7 @@
                 }
             ],
             "description": "The boilerplate PHP framework",
-            "time": "2016-07-19 19:15:51"
+            "time": "2016-07-23 16:29:38"
         },
         {
             "name": "mindplay/composer-locator",
