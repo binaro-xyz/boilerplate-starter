@@ -1,0 +1,7 @@
+Options -Indexes
+
+# Disallow access to the config file
+<Files "config.ini">
+     Order allow,deny
+     Deny from all
+</Files>
