@@ -2,12 +2,16 @@
 
 1. Add the Dotdeb repository to /etc/apt/sources.list:
 
+    ```
     deb http://packages.dotdeb.org jessie all
     deb-src http://packages.dotdeb.org jessie all
+    ```
 
 2. Install their GPG key
 
+    ```
     wget https://www.dotdeb.org/dotdeb.gpg -O - | apt-key add -
+    ```
 
 3. `apt-get update`
 
@@ -17,18 +21,21 @@
 
 6. `apt-get install curl apache2 php7.0 php7.0-curl php7.0-mcrypt php7.0-mysql`
 
-7. Make sure you have mod_rewrite enabled: First, run `a2enmod rewrite`.
+7. Make sure you have mod_rewrite enabled:
+
+    First, run `a2enmod rewrite`.
     
-8. Then, add the following to your Apache config:
+    Then, add the following to your Apache config:
     
+    ```
     <Directory /var/www/>
                 Options Indexes FollowSymLinks MultiViews
                 AllowOverride All
                 Order allow,deny
                 allow from all
     </Directory>
-    
-9. Finally, restart apache `service restart apache2`
+    ```
+    Finally, restart apache `service restart apache2`
 
 # Install boilerplate
 
@@ -38,7 +45,9 @@
 
 3. Import the database. First create a database with the name of your choice (`CREATE DATABASE boilerplate;`), then run the following:
     
+    ```
     mysql boilerplate < db.sql
+    ```
 
 # Replace the `acme` namespace with your own
 
@@ -46,4 +55,8 @@ By default, all classes are in the `acme` namespace. To switch to your own names
 
 1. Rename the directory `lib/acme` to `lib/binaro`
 
-2. Run sed -i '' 's/acme/binaro/g' `find * -type f -print`
+2. Run 
+    
+    ```
+    sed -i '' 's/acme/binaro/g' `find * -type f -print`
+    ```
