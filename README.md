@@ -29,7 +29,6 @@
     
     ```
     <Directory /var/www/>
-                Options Indexes FollowSymLinks MultiViews
                 AllowOverride All
                 Order allow,deny
                 allow from all
@@ -60,3 +59,8 @@ By default, all classes are in the `acme` namespace. To switch to your own names
     ```
     sed -i '' 's/acme/binaro/g' `find * -type f -print`
     ```
+
+# Apache setup
+
+1. Enable mod_rewrite: `a2enmod rewrite`
+2. 
