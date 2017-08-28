@@ -50,6 +50,8 @@
     mysql boilerplate < db.sql
     ```
 
+4. Make sure to set the keys `file_dir` and `view_dir` in the `config` table according to your environment.
+
 # Replace the `acme` namespace with your own
 
 By default, all classes are in the `acme` namespace. To switch to your own namespace, follow these steps, replacing `binaro` with your desired namespace name.

@@ -9,10 +9,9 @@ require_once __DIR__ . '/lib/base.php';
 
 \boilerplate\Core\Router::get('hello/{name}', function($name) {
     return 'Hi there, ' . $name . '!
-    <br>Say <a href="' . route('bye', array('name' => $name), true) . '">bye</a>.';
+    <br>Say <a href="' . route('bye', array('name' => $name)) . '">bye</a>.';
 });
 
 \boilerplate\Core\Router::get('bye/{name}', function($name) {
-    return 'See you, ' . $name . '!
-    <br>Go to the <a href="' . route('home', array(), true) . '">homepage</a>.';
+    return view('demo/bye.html', array('name' => $name));
 }, 'bye');
