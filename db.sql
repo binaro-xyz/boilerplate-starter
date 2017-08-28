@@ -31,8 +31,8 @@ LOCK TABLES `config` WRITE;
 INSERT INTO `config` (`id`, `property`, `value`)
 VALUES
 	(1,'base_url','https://example.org'),
-	(2,'file_dir','/var/www/boilerplate/files'),
-  (3,'view_dir','/var/www/boilerplate/res/views');
+	(2,'file_dir','/files'),
+  (3,'view_dir','res/views');
 
 /*!40000 ALTER TABLE `config` ENABLE KEYS */;
 UNLOCK TABLES;
