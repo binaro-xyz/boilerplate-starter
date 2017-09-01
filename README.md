@@ -21,7 +21,9 @@
 
 6. `apt-get install curl apache2 php7.0 php7.0-curl php7.0-mcrypt php7.0-mysql`
 
-7. Make sure you have mod_rewrite enabled:
+7. Set the Apache DocumentRoot to the `public` directory (e.g. `/var/www/boilerplate/public`).
+
+8. Make sure you have mod_rewrite enabled:
 
     First, run `a2enmod rewrite`.
     
@@ -29,7 +31,6 @@
     
     ```
     <Directory /var/www/>
-                Options Indexes FollowSymLinks MultiViews
                 AllowOverride All
                 Order allow,deny
                 allow from all
@@ -39,7 +40,7 @@
 
 # Install boilerplate
 
-1. Upload the boilerplate files to Apache's file root
+1. Upload the boilerplate files to Apache's file root (e.g. `/var/www/boilerplate`).
 
 2. Run `composer install`
 

@@ -1,6 +1,5 @@
 # ************************************************************
 # Database: boilerplate
-# Generation Time: 2016-07-18 19:52:55 +0000
 # ************************************************************
 
 
@@ -32,7 +31,8 @@ LOCK TABLES `config` WRITE;
 INSERT INTO `config` (`id`, `property`, `value`)
 VALUES
 	(1,'base_url','https://example.org'),
-	(2,'file_dir','files');
+	(2,'file_dir','/files'),
+  (3,'view_dir','res/views');
 
 /*!40000 ALTER TABLE `config` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -55,7 +55,6 @@ CREATE TABLE `files` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-
 # Dump of table meta
 # ------------------------------------------------------------
 
@@ -66,7 +65,6 @@ CREATE TABLE `meta` (
   `value` text,
   PRIMARY KEY (`property`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
 
 
 # Dump of table users
@@ -83,8 +81,6 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
 
 
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
