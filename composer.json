@@ -13,7 +13,7 @@
         {
             "name": "Lorenz Sieben",
             "email": "me@lorenz-sieben.com",
-            "homepage": "http://lorenz-sieben.com",
+            "homepage": "https://lorenz-sieben.com",
             "role": "Developer"
         }
     ],
@@ -34,8 +34,10 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "boilerplate/boilerplate": "0.1.0.x-dev",
-        "monolog/monolog": "^1.22"
+        "boilerplate/boilerplate": "dev-master",
+        "monolog/monolog": "^1.22",
+        "symfony/http-foundation": "^3.3",
+        "twig/twig": "^2.0"
     },
     "autoload": {
         "files": [
