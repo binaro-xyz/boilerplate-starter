@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "37aa06ac09ae648965a1567be8a8adbd",
+    "content-hash": "3ecebf5293e4f1d362804ebd40b4b1b3",
     "packages": [
         {
             "name": "baltpeter/password-hashing-pbkdf2",
@@ -38,7 +38,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.my-server.in/boilerplate/boilerplate.git",
-                "reference": "2e635dee36bc0d1c1c624955c571f8c85dd351b0"
+                "reference": "9dacbc200541f3cc54fcf0df22d3c6c9c5fc1634"
             },
             "require": {
                 "baltpeter/password-hashing-pbkdf2": "*",
@@ -46,7 +46,9 @@
                 "monolog/monolog": "^1.22",
                 "myclabs/php-enum": "^1.4",
                 "pear-pear.php.net/config_lite": "*",
-                "php": ">=7.0.0"
+                "php": ">=7.0.0",
+                "symfony/http-foundation": "^3.3",
+                "twig/twig": "^2.0"
             },
             "type": "library",
             "autoload": {
@@ -75,12 +77,12 @@
                 {
                     "name": "Lorenz Sieben",
                     "email": "me@lorenz-sieben.com",
-                    "homepage": "http://lorenz-sieben.com",
+                    "homepage": "https://lorenz-sieben.com",
                     "role": "Developer"
                 }
             ],
             "description": "The boilerplate PHP framework",
-            "time": "2017-08-27T16:08:58+00:00"
+            "time": "2017-09-02T00:41:20+00:00"
         },
         {
             "name": "mindplay/composer-locator",
@@ -323,20 +325,20 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v3.3.6",
+            "version": "v3.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "49e8cd2d59a7aa9bfab19e46de680c76e500a031"
+                "reference": "14bacad23a4f075bfd3fd456755236cb261320e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/49e8cd2d59a7aa9bfab19e46de680c76e500a031",
-                "reference": "49e8cd2d59a7aa9bfab19e46de680c76e500a031",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/14bacad23a4f075bfd3fd456755236cb261320e3",
+                "reference": "14bacad23a4f075bfd3fd456755236cb261320e3",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9",
+                "php": "^5.5.9|>=7.0.8",
                 "symfony/polyfill-mbstring": "~1.1"
             },
             "require-dev": {
@@ -372,7 +374,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-21T11:04:46+00:00"
+            "time": "2017-08-10T07:07:06+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -508,6 +510,8 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.1"
+    },
     "platform-dev": []
 }

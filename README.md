@@ -1,17 +1,21 @@
 # Install requirements on Debian
 
-1. Add the Dotdeb repository to /etc/apt/sources.list:
+1. Add this PHP 7.1 repository to /etc/apt/sources.list:
 
     ```
-    deb http://packages.dotdeb.org jessie all
-    deb-src http://packages.dotdeb.org jessie all
+    deb https://packages.sury.org/php/ jessie main
+    deb-src https://packages.sury.org/php/ jessie main
     ```
 
-2. Install their GPG key
+2. Install their GPG key:
 
     ```
-    wget https://www.dotdeb.org/dotdeb.gpg -O - | apt-key add -
+    wget https://packages.sury.org/php/apt.gpg -O - | apt-key add -
     ```
+    
+    and `apt-transport-https`:
+    
+    `apt-get install apt-transport-https`
 
 3. `apt-get update`
 
@@ -19,7 +23,7 @@
 
 5. `mysql_secure_installation`
 
-6. `apt-get install curl apache2 php7.0 php7.0-curl php7.0-mcrypt php7.0-mysql`
+6. `apt-get install curl apache2 php7.1 php7.1-curl php7.1-mcrypt php7.1-mysql`
 
 7. Set the Apache DocumentRoot to the `public` directory (e.g. `/var/www/boilerplate/public`).
 
@@ -30,7 +34,7 @@
     Then, add the following to your Apache config:
     
     ```
-    <Directory /var/www/>
+    <Directory /var/www>
                 AllowOverride All
                 Order allow,deny
                 allow from all
@@ -49,6 +53,8 @@
     ```
     mysql boilerplate < db.sql
     ```
+
+4. Configure the database appropriately by copying `config-sample.ini` to `config.ini`.
 
 # Replace the `acme` namespace with your own
 

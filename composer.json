@@ -6,7 +6,7 @@
     "authors": [
         {
             "name": "Benjamin Altpeter",
-            "email": "kontakt@benjamin-altpeter.de",
+            "email": "hi@bn.al",
             "homepage": "https://benjamin-altpeter.de",
             "role": "Developer"
         },
@@ -34,6 +34,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
+        "php": ">=7.1",
         "boilerplate/boilerplate": "dev-master",
         "monolog/monolog": "^1.22",
         "symfony/http-foundation": "^3.3",
