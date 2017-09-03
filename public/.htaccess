@@ -1,11 +1,5 @@
 Options -Indexes
 
-# Disallow access to the config file
-<Files "config.ini">
-     Order allow,deny
-     Deny from all
-</Files>
-
 # Redirect every request to index.php for it to be processed by Boilerplate
 RewriteEngine On
 
